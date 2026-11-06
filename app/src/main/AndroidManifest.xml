@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="個人資遣試算器" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <receiver
+            android:name=".SeveranceWidgetProvider"
+            android:exported="true"
+            android:label="個人資遣試算器">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/severance_widget_info"/>
+        </receiver>
+    </application>
+</manifest>
